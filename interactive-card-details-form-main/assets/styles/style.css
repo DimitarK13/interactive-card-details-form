@@ -38,6 +38,8 @@ main {
   padding: 24px;
   box-sizing: border-box;
   color: white;
+  margin-bottom: 28px;
+  margin-left: -40px;
 
   display: flex;
   flex-direction: column;
@@ -55,6 +57,7 @@ main {
   width: 375px;
   height: 200px;
   border-radius: 8px;
+  margin-left: 40px;
 }
 
 .card-back-text {
@@ -80,4 +83,121 @@ main {
 
 .card-front-logo {
   width: 70px;
+}
+
+.card-front-name {
+  text-transform: uppercase;
+}
+
+.card-form label {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: hsl(278, 68%, 11%);
+  font-weight: bold;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 370px;
+  margin-bottom: 20px;
+}
+
+.input-el {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 18px;
+  border: 1px solid hsl(279, 6%, 55%);
+}
+
+.input-el:focus {
+  border: 1px solid hsl(278, 68%, 11%);
+}
+
+.input-el::placeholder {
+  color: hsl(279, 6%, 55%);
+}
+
+.exp-date-cvc {
+  display: flex;
+  width: 370px;
+}
+
+.exp-date-inputs {
+  display: flex;
+  gap: 8px;
+}
+
+.submit-btn,
+.form-complete-btn {
+  cursor: pointer;
+  border: 0;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  width: 370px;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: hsl(279, 6%, 55%);
+}
+
+.form-complete {
+  text-align: center;
+  display: none;
+}
+
+.form-complete-heading {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: hsl(278, 68%, 11%);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.form-complete-text {
+  color: hsl(279, 6%, 55%);
+}
+
+.container {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  .bg-image-desktop {
+    display: none;
+  }
+
+  .bg-image-mobile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: inline-block;
+    z-index: -5;
+  }
+
+  .card-front {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .card-back {
+    margin-left: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
