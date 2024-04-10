@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 1px;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
+.bg-image-desktop {
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.bg-image-mobile {
+  display: none;
+}
+
+.card-front {
+  background-image: url('../images/bg-card-front.png');
+  background-size: cover;
+  width: 375px;
+  height: 200px;
+  border-radius: 8px;
+  padding: 24px;
+  box-sizing: border-box;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-front p {
+  margin: 0;
+}
+
+.card-back {
+  background-image: url('../images/bg-card-back.png');
+  background-size: cover;
+  position: relative;
+  width: 375px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.card-back-text {
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 38.5%;
+  right: 47px;
+}
+
+.card-front-content-extra {
+  margin-top: 12px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-front-numbers {
+  font-size: 26px;
+  display: flex;
+  gap: 12px;
+}
+
+.card-front-logo {
+  width: 70px;
+}
